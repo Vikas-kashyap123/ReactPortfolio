@@ -1,14 +1,22 @@
 import React from "react";
-import Top from "./Top";
 import About from "./About";
-import Skills from "./Skills";
+import Experience from "./Experience";
+import Home from "./Home";
+import Navbar from "./NavBar";
+import Portfolio from "./Portfolio";
+import SocialLinks from "./SocialLinks";
+import Contact from "./Contact";
 
 function App() {
   return (
     <div>
-      <Top />
+      <Navbar />
+      <Home />
       <About />
-      <Skills />
+      <SocialLinks />
+      <Portfolio />
+      <Experience />
+      <Contact />
     </div>
   );
 }
