@@ -64,7 +64,7 @@ function Experience() {
   return (
     <div
       name="experience"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white "
+      className="w-full  bg-gradient-to-b from-gray-800 to-black text-white "
     >
       <div className="max-w-screen-lg mx-auto  flex flex-col text-white justify-center w-full h-full">
         <div>
