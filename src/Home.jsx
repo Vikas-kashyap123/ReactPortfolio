@@ -21,9 +21,18 @@ function Home() {
             Front End Engineering, and I love to create beautiful and performant
             products with delightful user experiences.
           </p>
-          <div>
+          <div className="flex mb-2 ">
+             <a href="/resume.pdf"
+              className="group mr-1 text-white w-fit px-3 py-2 my-1 flex items-center rounded-md bg-gradient-to-r
+             from-cyan-500 to-blue-500 cursor-pointer"
+            >
+              Resume
+              <span className="">
+                <MdKeyboardArrowRight size={25} className="ml-1" />
+              </span>
+            </a>
             <button
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r
+              className="group text-white w-fit px-3 py-2 my-1 flex items-center rounded-md bg-gradient-to-r
              from-cyan-500 to-blue-500 cursor-pointer"
             >
               Portfolio

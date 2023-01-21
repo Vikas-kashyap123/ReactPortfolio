@@ -1,36 +1,54 @@
 import React from "react";
 import mycart from "./assets/mycart.png";
-import array from "./assets/array.png";
-import converter from "./assets/converter.png";
-import node from "./assets/node.png";
-import reactparalel from "./assets/reactparalel.png";
-import weather from "./assets/weather.png";
+import Shows from "./assets/Shows.png";
+import Todo from "./assets/Todo.png";
+import Calculator from "./assets/Calculator.png";
+import Multitable from "./assets/Multitable.png";
+import Convertor from "./assets/Convertor.png";
 
 function Portfolio() {
   const portfolios = [
     {
       id: 1,
       src: mycart,
+      link: "https://trythenbuy.netlify.app/",
+      title: "E_COMMERCE_APP",
+      code: "https://github.com/Vikas-kashyap123/E-commerce"
     },
     {
       id: 2,
-      src: array,
+      src: Shows,
+      link: "https://strangers-shows.netlify.app/",
+      title: "TV_SHOWS",
+      code: "https://github.com/Vikas-kashyap123/TV_Shows"
     },
     {
       id: 3,
-      src: converter,
+      src: Todo,
+      link: "https://class-based-todo-xtended.netlify.app/",
+      title: "TODO_APP",
+      code: "https://github.com/Vikas-kashyap123/ClassBasedTodo"
     },
     {
       id: 4,
-      src: node,
+      src: Calculator,
+      link: "https://calculator-me-generation.netlify.app/",
+      title: "CALCULATOR",
+      code: "https://github.com/Vikas-kashyap123/Calculator"
     },
     {
       id: 5,
-      src: reactparalel,
+      src: Multitable,
+      link: "https://multytable.netlify.app/",
+      title: "MULTITABLE",
+      code: "https://github.com/Vikas-kashyap123/Multy-Table"
     },
     {
       id: 6,
-      src: weather,
+      src: Convertor,
+      link: "https://assignment-17-vikas63.codeyogi-batch-2.repl.co/",
+      title: "UNIT_CONVERTOR",
+      code: ""
     },
   ];
 
@@ -46,25 +64,29 @@ function Portfolio() {
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-12 ">
+          {portfolios.map(({ id, src, link, title, code }) => (
             <div
               key={id}
               className="shadow-md shadow-gray-600 rounded-lg aspect-square "
             >
+              
               <img
                 src={src}
                 alt=""
                 className=" ronded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center ">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
+                <a href={link} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
+                </a>
+                <a href={code} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
                   Code
-                </button>
+                </a>
+                
               </div>
+              <h1 className="flex text-center items-center justify-center mx-auto">{title}</h1>
+             
             </div>
           ))}
         </div>

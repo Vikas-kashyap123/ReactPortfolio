@@ -12,7 +12,7 @@ function SocialLinks() {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/vikas-kashyap-01aa1a235/",
       style: "rounded-tr-md",
     },
     {
@@ -47,7 +47,7 @@ function SocialLinks() {
   ];
 
   return (
-    <div className="hidden flex-col top-[35%] left-0 fixed md:flex">
+    <div className="hidden sm:flex-col top-[35%] left-0 fixed md:flex">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
